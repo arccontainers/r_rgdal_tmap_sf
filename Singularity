@@ -19,6 +19,7 @@ apt-get install -y nano
 apt-get install -y git-all
 apt-get install -y software-properties-common #required for apt-add-repository
 apt-get -y update
+apt-get -y install openssl-dev
 apt-get -y install libcurl4-openssl-dev libxml2-dev
 
 #Set correct locale for R
@@ -52,6 +53,36 @@ apt-get install -y libgeos-dev
 Rscript -e 'install.packages("rgdal")'
 Rscript -e 'install.packages("tmap")'
 Rscript -e 'install.packages("sf")'
+
+Rscript -e 'install.packages("GISTools")'
+Rscript -e 'install.packages("sp")'
+Rscript -e 'install.packages("gstat")'
+Rscript -e 'install.packages("raster")'
+Rscript -e 'install.packages("deldir")'
+Rscript -e 'install.packages("pycno")'
+Rscript -e 'install.packages("rtop")'
+
+
+
+Rscript -e 'install.packages("scales")'
+Rscript -e 'install.packages("ggplot2")'
+Rscript -e 'install.packages("tbart")'
+Rscript -e 'install.packages("automap")'
+Rscript -e 'install.packages("geosphere")'
+
+
+Rscript -e 'install.packages("tidyverse")'
+Rscript -e 'install.packages("RCurl")'
+Rscript -e 'install.packages("rvest")'
+Rscript -e 'install.packages("jsonlite")'
+Rscript -e 'install.packages("OpenStreetMap")'
+Rscript -e 'install.packages("grid")'
+
+
+Rscript -e 'install.packages("osmdata")'
+Rscript -e 'install.packages("repmis")'
+Rscript -e 'install.packages("gclus")'
+Rscript -e 'install.packages("stringr")'
 
 #Create stub directory for /nobackup
 mkdir -p /nobackup
